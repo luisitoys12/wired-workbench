@@ -1,0 +1,213 @@
+{
+  "target": "habbo.es",
+  "width": 12,
+  "height": 7,
+  "kinds": [
+    {
+      "name": "rojo",
+      "color": "#dc283c"
+    }
+  ],
+  "pieces": [
+    {
+      "id": "mueble-1",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-2",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-3",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-4",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-5",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-6",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-7",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-8",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-9",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-10",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-11",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-12",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-13",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-14",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-15",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-16",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-17",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-18",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-19",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-20",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-21",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-22",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-23",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-24",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-25",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-26",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-27",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-28",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-29",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-30",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-31",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-32",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-33",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-34",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-35",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-36",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-37",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-38",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-39",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    },
+    {
+      "id": "mueble-40",
+      "name": "Mueble rojo 1x1",
+      "kind": "rojo"
+    }
+  ]
+}

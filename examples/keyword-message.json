@@ -1,0 +1,26 @@
+{
+  "schema": "wired-workbench/1",
+  "target": "habbogz",
+  "room": "design-not-a-live-room",
+  "furniture": [],
+  "stacks": [
+    {
+      "id": "example-stack",
+      "trigger": {
+        "kind": "trigger.keyword",
+        "params": {
+          "keyword": "hola"
+        }
+      },
+      "conditions": [],
+      "effects": [
+        {
+          "kind": "effect.message",
+          "params": {
+            "text": "Bienvenido"
+          }
+        }
+      ]
+    }
+  ]
+}

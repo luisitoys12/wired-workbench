@@ -1,0 +1,47 @@
+{
+  "schema": "wired-workbench/1",
+  "target": "habbogz",
+  "room": "design-not-a-live-room",
+  "furniture": [
+    {
+      "id": "control",
+      "name": "Control de ejemplo",
+      "states": 2,
+      "state": 0
+    },
+    {
+      "id": "output",
+      "name": "Salida de ejemplo",
+      "states": 2,
+      "state": 0
+    }
+  ],
+  "stacks": [
+    {
+      "id": "example-stack",
+      "trigger": {
+        "kind": "trigger.use",
+        "params": {},
+        "object": "control"
+      },
+      "conditions": [
+        {
+          "kind": "condition.state",
+          "object": "output",
+          "params": {
+            "state": 0
+          }
+        }
+      ],
+      "effects": [
+        {
+          "kind": "effect.state",
+          "object": "output",
+          "params": {
+            "state": 1
+          }
+        }
+      ]
+    }
+  ]
+}

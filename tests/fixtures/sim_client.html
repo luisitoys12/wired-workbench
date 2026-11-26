@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><title>Cliente simulado (fixture local, no es un hotel)</title>
+<style>body{font:14px sans-serif;background:#0d1726;color:#edf3fa}.item{display:inline-block;margin:4px;padding:8px;border:1px solid #567;cursor:default}.item[data-box]{cursor:pointer;background:#1c3a57}#editor{display:none;border:2px solid #7ab;padding:12px;margin:12px 0}</style>
+<h1>Cliente simulado</h1><p id="banner">FIXTURE LOCAL: no es Habbogz ni Habbo.es</p>
+<div id="room" data-room-id="9" data-room-name="Sala de pruebas"></div>
+<div id="editor"><h2 id="etitle"></h2><div id="fields"></div><button id="save">Guardar</button><button id="close">Cerrar</button></div>
+<script>
+const params=new URLSearchParams(location.search);
+const state={items:[{id:100,base:5,pos:[0,0,0]},{id:101,base:5,pos:[1,0,0],box:'repeat'},{id:102,base:5,pos:[2,0,0],box:'chase'},{id:103,base:5,pos:[3,0,0],box:'collision'},{id:104,base:5,pos:[4,0,0],box:'teleport'}],
+ boxes:{101:{v:-1},102:{v:-1,selected_items:[]},103:{v:-1},104:{v:-1}},dropSaves:params.get('drop')==='1'};
+if(params.get('clone')==='1')window.__wiredIdentity={room_id:9,owner_id:3,room_state:params.get('state')||'hide',private_acceptance_room:true};
+const room=document.getElementById('room');
+for(const it of state.items){const d=document.createElement('div');d.className='item';d.dataset.itemId=it.id;d.dataset.baseId=it.base;d.dataset.pos=it.pos.join(',');d.textContent='#'+it.id+(it.box?' ('+it.box+')':'');if(it.box){d.dataset.box=it.id;}room.appendChild(d);}
+let open=null;
+function show(id){open=id;document.getElementById('etitle').textContent='Editor '+id;const f=document.getElementById('fields');f.innerHTML='';
+ for(const [k,v] of Object.entries(state.boxes[id])){const l=document.createElement('label');l.textContent=k+' ';const i=document.createElement('input');i.name=k;i.value=JSON.stringify(v);l.appendChild(i);f.appendChild(l);}
+ document.getElementById('editor').style.display='block';}
+room.addEventListener('click',e=>{const t=e.target.closest('[data-box]');if(t)show(t.dataset.box);});
+document.getElementById('close').onclick=()=>{open=null;document.getElementById('editor').style.display='none';};
+document.getElementById('save').onclick=()=>{if(state.dropSaves)return;const o={};for(const i of document.querySelectorAll('#fields input'))o[i.name]=JSON.parse(i.value);state.boxes[open]=o;};
+</script>

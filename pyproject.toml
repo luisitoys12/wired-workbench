@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wired-workbench"
+version = "0.1.0.dev0"
+description = "Offline WIRED model design tools, no native hotel integration"
+requires-python = ">=3.10"
+
+[project.scripts]
+wired-workbench = "wired_workbench.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["wired_workbench*"]
+
+[tool.setuptools.package-data]
+wired_workbench = ["web/*.html", "web/*.css", "web/*.js"]
